@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume | Vishnu Dalvi</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #0f172a;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 22px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 35px auto;
+            padding: 0 18px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .intro h1 {
+            margin-bottom: 10px;
+        }
+
+        .intro p {
+            color: #64748b;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 22px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 22px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .view-btn {
+            background: #2563eb;
+            color: white;
+        }
+
+        .download-btn {
+            background: #0f172a;
+            color: white;
+        }
+
+        .pdf-container {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        iframe {
+            width: 100%;
+            height: 850px;
+            border: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #64748b;
+        }
+
+        @media (max-width: 600px) {
+            iframe {
+                height: 650px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Vishnu Dalvi</h2>
+        <a href="index.html">← Back to Portfolio</a>
+    </header>
+
+    <main>
+
+        <section class="intro">
+            <h1>My Resume</h1>
+        </section>
+
+        <div class="actions">
+            <a class="btn view-btn"
+               href="assets/resume/Vishnu_Dalvi_Resume.pdf"
+               target="_blank">
+                Open PDF
+            </a>
+
+            <a class="btn download-btn"
+               href="assets/resume/Vishnu_Dalvi_Resume.pdf"
+               download="Vishnu_Dalvi_Resume.pdf">
+                Download Resume
+            </a>
+        </div>
+
+        <div class="pdf-container">
+            <iframe
+                src="assets/resume/Vishnu_Dalvi_Resume.pdf"
+                title="Vishnu Dalvi Resume">
+            </iframe>
+        </div>
+
+    </main>
+
+    <footer>
+        © 2026 Vishnu Dalvi
+    </footer>
+
+</body>
+</html>
